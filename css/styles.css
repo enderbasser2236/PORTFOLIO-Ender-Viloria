@@ -1,0 +1,191 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+
+    font-family: sans-serif;
+}
+
+h1,
+h2,
+h3 {
+    font-family: "Metal Mania"
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+/* header section--------------------------------------------------------------------------------*/
+
+
+.header {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+    color: #ffffff;
+    text-shadow: rgb(0, 0, 0) 0.1em 0.1em 0.2em;
+    font-size: 45px;
+    z-index: 1;
+
+}
+
+h2 {
+    text-shadow: rgb(0, 0, 0) 0.1em 0.1em 0.1em;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    text-align: center;
+    font-size: 30px;
+    color: rgb(255, 255, 255);
+}
+
+.myPic {
+    margin-top: 25px;
+    margin-left: 35%;
+    width: 150px;
+    height: 200px;
+    border-radius: 25%;
+    border: solid 2px #ff6219;
+
+}
+
+.myName {
+    animation-duration: 3s;
+    animation-name: slidein;
+}
+
+
+@keyframes slidein {
+    from {
+        margin-left: 100%;
+        width: 300%;
+        font-size: 10px;
+    }
+
+
+
+    to {
+        margin-left: 0%;
+        width: 100%;
+    }
+}
+
+button {
+
+    background: transparent;
+    color: #ffffff;
+    text-shadow: rgb(0, 0, 0) 0.1em 0.1em 0.1em;
+    border: 0px;
+    padding: 10px;
+    font-size: larger;
+}
+
+button:hover {
+    background-color: #1EB4F0;
+    color: rgb(255, 255, 255);
+    border: white 2px;
+    border-radius: 6px;
+}
+
+.navBar-container {
+    display: flex;
+    justify-content: center;
+}
+
+.navBar {
+    padding-top: 30px;
+    display: inline-block;
+    text-align: right;
+    position: relative;
+
+}
+
+.headerVideo {
+    z-index: -1;
+    object-position: center;
+    object-fit: cover;
+    position: absolute;
+    height: auto;
+    width: 100%;
+}
+
+/* skills section----------------------------------------------------------------------------------------------- */
+
+#projects {
+    background-color: #043c4e;
+    padding-bottom: 50px;
+}
+
+.project img {
+    padding: 10px;
+    margin: 10px;
+    width: 200px;
+    height: 200px;
+    border-radius: 25%;
+    border: solid 2px #0FD5D9;
+
+
+}
+
+
+.projectContainer {
+    display: flex;
+    justify-content: space-evenly;
+    flex-flow: wrap;
+
+}
+
+/* projects section********************************************************************************* */
+
+#skills {
+    background-color: #0FD5D9;
+}
+
+.containerSkills {
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 50px;
+    flex-wrap: wrap;
+}
+
+.skill img {
+    width: 150px;
+    height: 150px;
+    border-radius: 20px;
+    padding: 5px;
+    border: dashed 2px rgb(141, 54, 255);
+
+
+}
+
+/* this is my contact section  *******************************************************/
+
+
+#contact {
+    text-align: center;
+}
+
+#contact img {
+    text-align: center;
+    padding: 25px;
+    width: 50px;
+    height: 50px;
+}
+
+/* this is my footer section********************************************************************** */
+
+footer {
+    text-align: center;
+    padding: 20px;
+    height: 10px;
+    background-color: #00141b;
+    color: aquamarine;
+    text-shadow: rgb(179, 102, 2) 0.1em 0.1em 0.1em;
+}
