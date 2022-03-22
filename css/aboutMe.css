@@ -148,7 +148,7 @@ li a:hover {
   margin-right: 10%;
   text-align: left;
   line-height: 2;
-  margin-bottom: 50px;
+  margin-bottom: 100px;
 }
 
 .BUTTON_OEW {
@@ -207,7 +207,7 @@ li a:hover {
 .cook {
   float: left;
   margin-right: 25px;
-  width: 30%
+  width: 25%
 }
 
 .music {
@@ -215,5 +215,5 @@ li a:hover {
   margin: 30px auto;
   float: right;
   margin-left: 25px;
-  width: 30%;
+  width: 25%;
 }
