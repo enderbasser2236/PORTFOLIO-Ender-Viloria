@@ -21,9 +21,19 @@ a {
 
 /* header section--------------------------------------------------------------------------------*/
 
+.headerVideo {
+    z-index: -1;
+    object-position: center;
+    object-fit: cover;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+
+}
 
 .header {
-
+    padding-top: 30px;
+    text-align: center;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -47,8 +57,8 @@ h2 {
 }
 
 .myPic {
-    margin-top: 25px;
-    margin-left: 35%;
+    margin-left: auto;
+    margin-right: auto;
     width: 150px;
     height: 200px;
     border-radius: 25%;
@@ -59,6 +69,23 @@ h2 {
 .myName {
     animation-duration: 3s;
     animation-name: slidein;
+}
+
+.responsiveMyName {
+    display: none;
+}
+
+@media (max-width: 700px) {
+    .myName {
+        display: none;
+    }
+
+    .responsiveMyName {
+        display: block;
+        animation-duration: 3s;
+        animation-name: slidein;
+    }
+
 }
 
 
@@ -107,16 +134,9 @@ button:hover {
 
 }
 
-.headerVideo {
-    z-index: -1;
-    object-position: center;
-    object-fit: cover;
-    position: absolute;
-    height: auto;
-    width: 100%;
-}
 
-/* skills section----------------------------------------------------------------------------------------------- */
+
+/* projects section----------------------------------------------------------------------------------------------- */
 
 #projects {
     background-color: #043c4e;
@@ -125,11 +145,15 @@ button:hover {
 
 .project img {
     padding: 10px;
-    margin: 10px;
-    width: 200px;
+    margin: 20px;
+    width: 300px;
     height: 200px;
-    border-radius: 25%;
+    border-radius: 15%;
     border: solid 2px #0FD5D9;
+    object-fit: cover;
+
+
+
 
 
 }
@@ -142,7 +166,7 @@ button:hover {
 
 }
 
-/* projects section********************************************************************************* */
+/* skills section********************************************************************************* */
 
 #skills {
     background-color: #0FD5D9;

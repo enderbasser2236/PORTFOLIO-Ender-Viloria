@@ -69,9 +69,7 @@ a {
   margin: 10px;
 }
 
-.formacion {
-  margin: 0 30% 0 30%;
-}
+
 
 li {
   color: #ffffff;
@@ -114,6 +112,24 @@ li a:hover {
   padding-top: 50px;
 }
 
+.profile {
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.skills {
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.formacion {
+  margin: 0 10% 0 10%;
+}
+
+.comunication {
+  margin: 0 10% 0 10%;
+}
+
 
 .bottom-container {
   background-color: black;
@@ -127,10 +143,12 @@ li a:hover {
 }
 
 .skill-row {
-  width: 50%;
-  margin: 100px auto 100px auto;
+  width: 80%;
+  margin-left: 10%;
+  margin-right: 10%;
   text-align: left;
-  line-height: 2
+  line-height: 2;
+  margin-bottom: 50px;
 }
 
 .BUTTON_OEW {
@@ -172,21 +190,18 @@ li a:hover {
 /*images are found from this point*/
 
 
-
-
-
-img {
-  width: 25%;
-}
-
-
-
 .profile-img {
   padding: 5px;
   border: dashed 2px #ae00ff;
-  border-radius: 30%;
+  border-radius: 25px;
   width: 15%;
   margin-bottom: 50px;
+}
+
+@media (max-width: 700px) {
+  .profile-img {
+    width: 30%;
+  }
 }
 
 .cook {
@@ -200,4 +215,5 @@ img {
   margin: 30px auto;
   float: right;
   margin-left: 25px;
+  width: 30%;
 }
