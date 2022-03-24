@@ -19,17 +19,15 @@ a {
     color: white;
 }
 
+header {
+    background-image: url(/img/background/programming.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
 /* header section--------------------------------------------------------------------------------*/
 
-.headerVideo {
-    z-index: -1;
-    object-position: center;
-    object-fit: cover;
-    position: fixed;
-    height: 100%;
-    width: 100%;
 
-}
 
 .header {
     padding-top: 30px;
@@ -37,6 +35,7 @@ a {
     display: flex;
     align-items: center;
     justify-content: center;
+
 }
 
 h1 {
@@ -106,10 +105,12 @@ h2 {
 
 button {
 
-    background: transparent;
+
+    background-color: rgb(0, 0, 0, 0.3);
     color: #ffffff;
-    text-shadow: rgb(0, 0, 0) 0.1em 0.1em 0.1em;
+    text-shadow: rgb(0, 0, 0) 0.1em 0.1em;
     border: 0px;
+    border-radius: 25px;
     padding: 10px;
     font-size: larger;
 }
@@ -141,9 +142,11 @@ button:hover {
 #projects {
     background-color: #043c4e;
     padding-bottom: 50px;
+    text-align: center;
 }
 
-.project img {
+.container-fluid img {
+    text-align: center;
     padding: 10px;
     margin: 20px;
     width: 300px;
@@ -158,13 +161,58 @@ button:hover {
 
 }
 
-
-.projectContainer {
-    display: flex;
-    justify-content: space-evenly;
-    flex-flow: wrap;
+.hidden {
+    position: relative;
 
 }
+
+
+
+
+/* HIDDEN HOOOVERS**********************************************/
+
+.hiddenDiv {
+    background-color: rgb(0, 50, 68, 0.5);
+    font-size: larger;
+    position: absolute;
+    padding: 10px;
+    width: 300px;
+    height: 200px;
+    border-radius: 15%;
+    object-fit: cover;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #ffffff;
+    opacity: 0;
+
+}
+
+.hidden:hover .hiddenDiv {
+    opacity: 1;
+}
+
+.hidden--tindog {
+    margin-top: 45px
+}
+
+.hidden--cocinasDelMundo {
+    margin-top: 32px;
+}
+
+.hidden--compraloYa {
+    margin-top: 32px;
+}
+
+.hidden--electroStore {
+    margin-top: 23px;
+}
+
+.hidden--presupuestoWeb {
+    margin-top: 32px;
+}
+
+
 
 /* skills section********************************************************************************* */
 
@@ -208,7 +256,7 @@ button:hover {
 footer {
     text-align: center;
     padding: 20px;
-    height: 10px;
+
     background-color: #00141b;
     color: aquamarine;
     text-shadow: rgb(179, 102, 2) 0.1em 0.1em 0.1em;
