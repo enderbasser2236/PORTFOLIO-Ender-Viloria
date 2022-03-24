@@ -19,15 +19,19 @@ a {
     color: white;
 }
 
-header {
-    background-image: url(../img/background/programming.jpg);
-    background-size: cover;
-    background-position: center;
-}
+
 
 /* header section--------------------------------------------------------------------------------*/
 
+.headerVideo {
+    z-index: -1;
+    object-position: center;
+    object-fit: cover;
+    position: fixed;
+    height: 100%;
+    width: 100%;
 
+}
 
 .header {
     padding-top: 30px;
