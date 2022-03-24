@@ -20,7 +20,7 @@ a {
 }
 
 header {
-    background-image: url(/img/background/programming.jpg);
+    background-image: url(../img/background/programming.jpg);
     background-size: cover;
     background-position: center;
 }
