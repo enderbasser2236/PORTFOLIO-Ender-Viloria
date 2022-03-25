@@ -19,6 +19,24 @@ a {
     color: white;
 }
 
+@media(max-width: 1000px) {
+
+    .headerVideo {
+        display: none;
+    }
+
+    header {
+        background-image: url(/img/background/binary-code-stream-digital-data-codes-hacker-coding-crypto-matrix-numbers-flow-digitally-blue-screen-abstract-background_102902-991.webp);
+        background-size: cover;
+        background-position: center;
+
+
+    }
+
+
+}
+
+
 
 
 /* header section--------------------------------------------------------------------------------*/
@@ -30,7 +48,6 @@ a {
     position: fixed;
     height: 100%;
     width: 100%;
-
 }
 
 .header {
@@ -40,6 +57,10 @@ a {
     align-items: center;
     justify-content: center;
 
+}
+
+.btnLink {
+    text-decoration: none;
 }
 
 h1 {
@@ -109,8 +130,7 @@ h2 {
 
 button {
 
-
-    background-color: rgb(0, 0, 0, 0.3);
+    background: transparent;
     color: #ffffff;
     text-shadow: rgb(0, 0, 0) 0.1em 0.1em;
     border: 0px;
@@ -119,12 +139,16 @@ button {
     font-size: larger;
 }
 
+
+
 button:hover {
-    background-color: #1EB4F0;
+    background-color: hsl(0, 0%, 100%, 0.2);
     color: rgb(255, 255, 255);
+
     border: white 2px;
-    border-radius: 6px;
+    /* border-radius: 6px; */
 }
+
 
 .navBar-container {
     display: flex;
