@@ -254,6 +254,10 @@ button:hover {
     flex-wrap: wrap;
 }
 
+.skill {
+    margin: 15px;
+}
+
 .skill img {
     width: 150px;
     height: 150px;
